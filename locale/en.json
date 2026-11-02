@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Decision History",
+    "description": "Records why a path was chosen, not just what was built: every decision carries a verbatim/inferred/missing honesty label plus replayable event coordinates, shown as a tree you can click into."
+  }
+}
