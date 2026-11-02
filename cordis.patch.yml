@@ -1,0 +1,9 @@
+- insert:
+    - id: decision-audit
+      name: '@local/decision-audit'
+      config:
+        # 自动抽取默认关闭：实测它在"改代码 + 说决策词"的轮次里过度触发，
+        # 把实现叙述当成了决策，噪声大于价值。需要时改成 conservative。
+        autoExtract: 'off'
+        maxEntries: 500
+        dir: .decisions
