@@ -1,21 +1,49 @@
-MIT License
+Copyright (c) 2026 AidenWanggitgit
 
-Copyright (c) 2026 Decision History contributors
+---
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+## 中文
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+本软件（含源码、文档与图片）仅供**个人学习、研究及其他非商业用途**使用。
+
+**禁止商业使用**，包括但不限于：
+
+- 出售本软件或其修改版、衍生版；
+- 将本软件（或其修改版）集成进以营利为目的的产品、服务或平台；
+- 以本软件为基础提供付费咨询、付费部署、付费培训、付费支持等服务；
+- 在商业组织内部用于其经营活动。教育机构、科研机构、公益组织等非营利主体的
+  教学与研究使用不属于商业使用。
+
+在保留本声明完整内容的前提下，你可以自由使用、修改与再分发本软件及其修改版；
+再分发时不得移除或修改本声明，也不得为接收方附加任何商业使用许可。
+
+本软件按「原样」提供，不附带任何明示或暗示的担保，包括但不限于适销性、
+特定用途适用性与不侵权担保。作者不对因使用或无法使用本软件而产生的任何
+直接或间接损失承担责任。
+
+---
+
+## English
+
+This software, including its source code, documentation and images, is licensed
+for **personal, educational, research and other noncommercial use only**.
+
+**Commercial use is prohibited**, including without limitation:
+
+- selling the software, modified versions, or derivative works;
+- embedding the software (or a modified version) in a product, service or
+  platform offered for profit;
+- charging for consulting, deployment, training or support based on it;
+- use in the business operations of a commercial entity. Teaching and research
+  use by educational institutions, research institutions and nonprofit
+  organizations is not commercial use.
+
+You may use, modify and redistribute the software and derivative works provided
+this notice is retained in full and unmodified, and no commercial license is
+granted to recipients.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING FROM, OUT OF
+OR IN CONNECTION WITH THE SOFTWARE OR THE USE OF THE SOFTWARE.

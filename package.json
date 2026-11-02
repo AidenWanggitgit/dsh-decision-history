@@ -1,8 +1,21 @@
 {
   "name": "@local/decision-audit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "type": "module",
+  "license": "SEE LICENSE IN LICENSE",
+  "author": "AidenWanggitgit",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AidenWanggitgit/dsh-decision-history.git"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "decision-log",
+    "adr"
+  ],
   "description": "Auditable decision trail: records why a path was chosen or dropped, with a verbatim/inferred/missing honesty label and replayable evidence coordinates.",
   "exports": {
     ".": "./index.js",

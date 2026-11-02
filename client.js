@@ -640,19 +640,52 @@ window.__ModuleLoader__.load({
         transition: 'background .15s ease, color .15s ease',
       };
 
+      async function fetchSummary() {
+        try {
+          const response = await fetch('/decision-tree/state', {
+            credentials: 'same-origin',
+            headers: { accept: 'application/json' },
+          });
+          if (!response.ok) return null;
+          const payload = await response.json().catch(() => null);
+          if (!payload || payload.ok !== true) return null;
+          return {
+            count: payload.projectTotal ?? 0,
+            sessionCount: payload.sessionTotal ?? 0,
+            cwd: payload.cwd ?? null,
+            project: payload.project ?? null,
+          };
+        } catch {
+          return null;
+        }
+      }
+
       function HeaderEntry(props) {
         const sessionId = props?.sessionId;
         const [summary, setSummary] = React.useState(null);
 
         React.useEffect(() => {
-          if (!sessionId || REPORTED.has(sessionId)) return;
-          REPORTED.add(sessionId);
           let live = true;
-          reportSession(sessionId).then((payload) => {
+
+          const load = async () => {
+            let payload = null;
+            // The session id may not reach a header entry on every deployment;
+            // the parameterless state read is the fallback that always works.
+            if (sessionId && !REPORTED.has(sessionId)) {
+              REPORTED.add(sessionId);
+              payload = await reportSession(sessionId);
+            }
+            if (!payload) payload = await fetchSummary();
             if (live && payload) setSummary(payload);
-          });
+          };
+
+          load();
+          const timer = setInterval(() => {
+            if (live) load();
+          }, 30000);
           return () => {
             live = false;
+            clearInterval(timer);
           };
         }, [sessionId]);
 
